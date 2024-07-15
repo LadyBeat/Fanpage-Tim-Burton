@@ -10,19 +10,21 @@ body{
   font-family: "Cinzel", serif;
   font-optical-sizing: auto;
   font-weight: 400;
-  background-color: rgb(236, 235, 235);
+  color: black;
 }
+
 img{
   max-width: 100%;
   max-height: 100%;
-  width: auto;
+  width: 0px;
   height: auto;
 }
 
 .container{
-  width: 100%;
-  max-width: 1100px;
-  margin: 0 auto;
+  width: 880px
+  max-width: 880px;
+  color: black;
+
 }
 
 h1{
@@ -75,6 +77,7 @@ header{
 
 nav{
    margin: 20px; 
+   padding-left: 50px;
    }
 .row{
   box-sizing: border-box;
@@ -93,21 +96,23 @@ nav a{
   background-image: url(Imagenes/Fondos/Fondo\ Jack.jpg);
 }
 .col-4{
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: stretch;
 }
 
+
 .col-8{
   color: aliceblue;
-  background-color: rgb(12, 10, 10);
+  background-color:black;
   display: flex;
   text-align:justify;
   justify-content:flex-end;
 }
-  
+
 .nav-pills .nav-link {
-  color: rgb(5, 5, 5); /*Color del texto */
+  color: black; /*Color del texto */
   background-color: #c2c7cb; /* Color de fondo */
   }
   .nav-pills .nav-link:hover {
@@ -119,15 +124,6 @@ nav a{
   width: 100%;
   padding: 0px;
 }
-
- 
-   
-
-
-  
-
-
-
 
 .footer-content{
   margin: 1em;
