@@ -4,22 +4,25 @@
   margin: 0;
   padding: 0;
 }
-body{
+html body{
   width: 100%;
-  height: 100%;
+  margin: 0;
+  padding: 0;
   font-family: "Cinzel", serif;
   font-optical-sizing: auto;
   font-weight: 400;
-  color: black;
+  background-color: black;
+}
+/* use el full-screen-element para que todos mis elemntos abarcaran toda la página, porque se desalinearon cuando le puse movimiento a la imagen del herder */
+.full-screen-element { 
+  height: 100%;
+  width: 100%;
 }
 
-
-
-.container{
+ .container{
   width: 880px
   max-width: 880px;
   color: black;
-
 }
 
 h1{
@@ -30,10 +33,10 @@ h1{
 }
 
 header{ 
-    padding: 15px;
+    padding: 0px;
     width:100%; 
     /* (height en px modifica el tamaño de mi contenedor de header) */
-    height: 250px;
+    height: 200px;
     display:flex;
     background-color: black;
 }
@@ -47,7 +50,7 @@ header{
   align-items: center;
 }
 .logo img{
- width: 350px;
+ width: 200px;
 }
 header{
   overflow: hidden; 
@@ -63,7 +66,7 @@ header{
 }
 @keyframes entrada{
   from {
-    right: -30%;
+    right: -30px;
   }
   to {
     right: 2%;
@@ -75,6 +78,7 @@ nav{
    padding-left: 50px;
    }
 .row{
+  width: 100%;
   box-sizing: border-box;
 }
 nav a{
@@ -99,6 +103,7 @@ nav a{
 
 
 .col-8{
+  width: 100%;
   color: aliceblue;
   background-color:black;
   display: flex;
