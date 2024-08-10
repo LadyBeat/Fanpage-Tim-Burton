@@ -11,18 +11,18 @@
     <header class="sticky-top"><!-- aquí use sticky- top que es una propiedad del nav en boostrap, para hacer que se fije el header a mi contenido -->
        <div class="encabezado container"><h1 style="color: aliceblue;"><strong>El extraño mundo de</strong></h1></div>
        <div class="logo container" class=".animated-image">
-           <img src="Imagenes/fondiu.png" alt="fondo">
+           <img src="Imagenes/Imagenes/fondiu.png" alt="fondo">
        </div>   
     </header>
 
     <!-- aquí use bootstrap pergamino espia  -->
     
-    <div class="row justify-content-start">   
-      <div class="container text-start"></div>       
-      <div class="col-4">
-        <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end" >
-          <nav class="nav nav-pills flex-column">
-            <a class="nav-link" href="#item-1"> <Strong>Biografía</Strong></a>
+    <div class="row justify-content-start ">   
+      <div class="container text-start "></div>       
+      <div class="col-4 ">
+        <nav id="navbar-example3" class="flex-column align-items-center pe-4 border-end" >
+          <nav class="nav nav-pills flex-column  "> <!-- aquí use sticky- top que es una propiedad del nav en boostrap, para hacer que se fije el header a mi contenido -->
+            <a class="nav-link " href="#item-1"> <Strong>Biografía</Strong></a>
             <nav class="nav nav-pills flex-column">
               <a class="nav-link ms-3 my-1" href="#item-1-1"><strong>Formación</strong></a>
               <a class="nav-link ms-3 my-1" href="#item-1-2"><strong>Vida privada</strong></a>
@@ -45,80 +45,97 @@
       
       <div class="col-8 full-screen-element">
         <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2 " tabindex="0">
-          <div id="item-1">
-              <h4>Biografía</h4>
-            <p>Timothy Walter Burton es un director de cine, productor, guionista, dibujante, escritor y animador estadounidense. 
-              Nació el 25 de agosto de 1958 en Burbank, California.</p>
-              <p>Hijo mayor de Bill Burton, exjugador de béisbol de ligas menores 
-              que más tarde trabajaría en el Parque Burbank, y de Jean Erickson, dueña de una tienda de regalos. “Tim” tiene un hermano 
-              menor con el que no tiene mucha relación llamado Daniel Burton </p>
+    
+         <div id="item-1">
+            <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExamplefm" aria-expanded="false" aria-controls="collapseExample">
 
-             <p>Durante la mayor parte de su infancia representaba, con su hermano, parodias relacionadas con delitos sangrientos, 
-              y él mismo se consideraba introvertido —una de sus anécdotas personales es la de haber simulado un asesinato para 
-              asustar a los vecinos, hasta tal punto que uno de ellos llamó a la policía—. Por ello recibió el alias «Axe Wound»
-               (herida de hacha). 
-              Siendo un niño ya realizaba cortometrajes en el patio trasero de su casa en la calle Evergreen utilizando 
-              técnicas de animación con películas de 8 mm sin sonido (una de ellas fue titulada la Isla del Doctor Agor, que hizo cuando
-               tenía 13 años).
-            </p>
-            
-           
+              <h5><ins>Biografía</ins></h5>
+            </button>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <div class="biografia">
+                  <img src="Imagenes/Imagenes/Tim_Burton_(Perfil).jpg" alt="Tim Burton Main" width="200px">
+                  <p>Timothy Walter Burton es un director de cine, productor, guionista, dibujante, escritor y animador estadounidense. 
+                    Nació el 25 de agosto de 1958 en Burbank, California.</p>
+                  <p>Hijo mayor de Bill Burton, exjugador de béisbol de ligas menores 
+                    que más tarde trabajaría en el Parque Burbank, y de Jean Erickson, dueña de una tienda de regalos. “Tim” tiene un hermano 
+                    menor con el que no tiene mucha relación llamado Daniel Burton </p>
+  
+                  <p>Durante la mayor parte de su infancia representaba, con su hermano, parodias relacionadas con delitos sangrientos, 
+                    y él mismo se consideraba introvertido —una de sus anécdotas personales es la de haber simulado un asesinato para 
+                    asustar a los vecinos, hasta tal punto que uno de ellos llamó a la policía—. Por ello recibió el alias «Axe Wound»
+                    (herida de hacha). 
+                    Siendo un niño ya realizaba cortometrajes en el patio trasero de su casa en la calle Evergreen utilizando 
+                    técnicas de animación con películas de 8 mm sin sonido (una de ellas fue titulada la Isla del Doctor Agor, que hizo cuando
+                     tenía 13 años).  </p>
+                </div>
+               
+               </div>
           </div>
+
           <div id="item-1-1">
             <p class="d-inline-flex gap-1">
               <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExamplefm" aria-expanded="false" aria-controls="collapseExample">
-                <h5>Formación</h5>
+                <h5><ins>Formación</ins></h5>
               </button>
             </p>
             
             <div class="collapse" id="collapseExamplefm">
               <div class="accordion-body">
-            
-                <p>En 1976, recibió una beca para ingresar en el Instituto de las artes de California (fundado por Walt Disney a manera de 
-                «plataforma alternativa de aprendizaje» para jóvenes interesados en la animación), del que se graduó en 1979. Ese año 
-                realizó Stalk of the Celery Monster, corto animado de menos de dos minutos que le dio la oportunidad de ser contratado por 
-                 los estudios Disney</p>
-                
+                <div class="formacion">
+                  <p>En 1976, recibió una beca para ingresar en el Instituto de las artes de California (fundado por Walt Disney a manera de 
+                    «plataforma alternativa de aprendizaje» para jóvenes interesados en la animación), del que se graduó en 1979. Ese año 
+                    realizó Stalk of the Celery Monster, corto animado de menos de dos minutos que le dio la oportunidad de ser contratado por 
+                    los estudios Disney
+                  </p>
+                  <img src="Imagenes/Imagenes/Burton joven.jpg" alt="">
+                </div>
               </div>
           </div>
-
+            <br>
           <div id="item-1-2">
             <p class="d-inline-flex gap-1">
               <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExamplevp" aria-expanded="false" aria-controls="collapseExample">
-                <h5>Vida Privada</h5>
+                <h5><ins>Vida Privada</ins></h5>
               </button>
             </p>
-            
             <div class="collapse" id="collapseExamplevp">
               <div class="accordion-body">
-                 <p>La vida privada de Tim ha sido muy discreta sin embargo ha tenido un par de relaciones en el medio. 
-                 En 1989, contrajo matrimonio con la artista alemana Lena Gieseke. Estuvieron casados hasta 1991.
-                 Posteriormente estuvo comprometido con Lisa Marie desde 1992 a 2001.
-                 Tim Burton y Helena Bonham Carter fueron una de las parejas más icónicas de Hollywood. Se conocieron en el set de la película
-                 “El planeta de los simios” en 2001 y comenzaron a salir. Aunque nunca se casaron, estuvieron juntos durante 13 años y tuvieron
-                  dos hijos, Billy(2003) y Nell Burton(2007) . Vivían en casas contiguas en Belsize Park, Londres, para mantener su relación, 
-                   pero no compartían una casa común, finalmente anunciaron su separación en 2014. 
-                   Finalmente en 2023 confirma relación con Mónica Bellucci, aunque había rumores de esta pareja no fue hasta la alfonbra roja de la cinta Diabolik, donde se presentaron juntos de la mano como pareja y de la cual sigue actualmente enamorado. 
-                   </p>
-                 
+                <div class="vidaPrivada">
+                  <p>La vida privada de Tim ha sido muy discreta sin embargo ha tenido un par de relaciones en el medio. 
+                    En 1989, contrajo matrimonio con la artista alemana Lena Gieseke. Estuvieron casados hasta 1991.
+                    Posteriormente estuvo comprometido con Lisa Marie desde 1992 a 2001.
+                    Tim Burton y Helena Bonham Carter fueron una de las parejas más icónicas de Hollywood. Se conocieron en el set de la película
+                    “El planeta de los simios” en 2001 y comenzaron a salir. Aunque nunca se casaron, estuvieron juntos durante 13 años y tuvieron
+                    dos hijos, Billy(2003) y Nell Burton(2007) . Vivían en casas contiguas en Belsize Park, Londres, para mantener su relación, 
+                    ero no compartían una casa común, finalmente anunciaron su separación en 2014. 
+                    Finalmente en 2023 confirma relación con Mónica Bellucci, aunque había rumores de esta pareja no fue hasta la alfonbra roja de la cinta Diabolik, donde se presentaron juntos de la mano como pareja y de la cual sigue actualmente enamorado. 
+                  </p>
+                  <img src="Imagenes/Imagenes/monica-bellucci-y-tim-burton-655x368.jpg" alt="">
+                </div>
                 </div>
             </div>
-
           </div>
-
           <div id="item-2">
-            <h4>Proyectos</h4>
-            <p>Tim Burtón ha participado en inumerable cantidad de proyectos, ya sea desde la dirección, la producción, ilustración o el guión, las obras de Burton son reconocidas al instante,
-              es po eso que a su estilo sombrío y melancólco le han denominado "Burtoniano", he aquí una recopilación de su trabajo.
-            </p>
-          
-           <div id="item-2-1">
             <p class="d-inline-flex gap-1">
-              <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExamplepel" aria-expanded="false" aria-controls="collapseExample">
-                <h4>Películas</h4>
+              <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExamplevp" aria-expanded="false" aria-controls="collapseExample">
+                <h4><ins>Proyectos</ins></h4>
               </button>
             </p>
-            
+            <div class="collapse" id="collapseExamplevp">
+              <div class="accordion-body">
+              <p>Tim Burtón ha participado en inumerable cantidad de proyectos, ya sea desde la dirección, la producción, ilustración o el guión, las obras de Burton son reconocidas al instante,
+                es po eso que a su estilo sombrío y melancólco le han denominado "Burtoniano", he aquí una recopilación de su trabajo.
+              </p>
+              </div>
+              <br>
+            <div id="item-2-1">
+                  <p class="d-inline-flex gap-1">
+                    <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExamplepel" aria-expanded="false" aria-controls="collapseExample">
+                      <h4><ins>Películas</ins></h4>
+                    </button>
+                  </p>
+            </div>
             <div class="collapse" id="collapseExamplepel">
               <div class="accordion-body">
                   <h6>La gran aventura de Pee-Wee (1985)</h6>
@@ -194,21 +211,24 @@
                   </p>
                 </div>
            </div>
+           <br>
            <div id="item-2-2">
             <!-- aqui use colapsar con boostrap -->
             <p class="d-inline-flex gap-1">
               <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                <h5>Cortos y más</h5>
+                <h5><ins>Cortos y más</ins></h5>
               </button>
             </p>
-            
             <div class="collapse" id="collapseExample">
               <div class="accordion-body">
-
-                <h4>Vincent(1982)</h4>
-                <p>Mientras trabajaba como artista conceptual, se hizo amigo del ejecutivo Julie Hickson y el encargado de desarrollo creativo de Disney, 
-                Tom Wilhite. En 1982, Wilhite lo financió con 60 000 dólares para producir una adaptación del poema Vincent, que Burton había escrito poco tiempo antes como un microrrelato para niños. Durante dos meses, Burton colaboró con animadores especializados en stop motion para producir el corto de cinco minutos de duración, filmado en blanco y negro, influido directamente por las películas alemanas de los años 1920. Narrado por el propio 
-                Price, Vincent marcó el inicio de una amistad entre el actor y Burton, que perduraría hasta la muerte del primero en 1993</p></div>
+                
+                  <h6>Vincent(1982)</h6>
+                  <p>Mientras trabajaba como artista conceptual, se hizo amigo del ejecutivo Julie Hickson y el encargado de desarrollo creativo de Disney, 
+                  Tom Wilhite. En 1982, Wilhite lo financió con 60 000 dólares para producir una adaptación del poema Vincent, que Burton había escrito poco tiempo antes como un microrrelato para niños. Durante dos meses, Burton colaboró con animadores especializados en stop motion para producir el corto de cinco minutos de duración, filmado en blanco y negro, influido directamente por las películas alemanas de los años 1920. Narrado por el propio 
+                  Price, Vincent marcó el inicio de una amistad entre el actor y Burton, que perduraría hasta la muerte del primero en 1993</p></div>
+                  <!-- <img src="Imagenes/Imagenes bajo licencia/Vincent.png" alt="Vincent"> -->
+              
+                
                 <h6>Hansel y Gretel(1982)</h6>
                 <p>Poco después, participó en la producción de una versión japonesa, en imagen real, del cuento de los hermanos Grimm Hansel y Gretel, para Disney Channel; la historia incorporaba elementos kung-fu para describir 
                 el enfrentamiento entre los niños y la bruja. La película fue transmitida, por única ocasión, en Halloween de 1982. </p> 
@@ -222,22 +242,26 @@
                 <p>Tim Burton participó en la serie "Wednesday" como director y productor ejecutivo. "Wednesday" es una serie de Netflix centrada en el personaje Wednesday Addams de "The Addams Family". La serie se enfoca en los años de Wednesday como estudiante en la Academia Nevermore, explorando tanto sus habilidades psíquicas emergentes como sus intentos de resolver un misterio que involucra a sus padres.
               </div>
             </div>
-                    
-                    
-                  
-          </div>
-
+          </div>        
+          <br>
           <div id="item-3">
-          
-            <h4>Exposiciones</h4>
-            <p>Tim Burtón ha tenido una trayectoria con un estilo único, el cual ha sido aclamado por la gente, es por ellos que su trabajo se 
-              ve expuesto en más de una exhibición, es por eso que les traemos las exposiciones más famosas del universo de Tim Burton.</p>                     
-          
+            <p class="d-inline-flex gap-1">
+              <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExamplevp" aria-expanded="false" aria-controls="collapseExample">
 
-           <div id="item-3-1">
+                <h4><ins>Exposiciones</ins></h4>
+              </button>
+            </p>
+            <div class="collapse" id="collapseExamplevp">
+              <div class="accordion-body">
+                 <p>Tim Burtón ha tenido una trayectoria con un estilo único, el cual ha sido aclamado por la gente, es por ellos que su trabajo se 
+                  ve expuesto en más de una exhibición, es por eso que les traemos las exposiciones más famosas del universo de Tim Burton.</p>                     
+           </div>
+            </div>  
+            <br>
+            <div id="item-3-1">
             <p class="d-inline-flex gap-1">
               <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                <h4>Actuales</h4>
+                <h4><ins>Actuales</ins></h4>
               </button>
             </p>
             <div class="collapse" id="collapseExample">
@@ -259,11 +283,11 @@
               </div>
             </div> 
           
-
+            <br>
             <div id="item-3-2">
               <p class="d-inline-flex gap-1">
                 <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                  <h4>Otros</h4>
+                  <h4><ins>Otros</ins></h4>
                 </button>
               </p>
               <div class="collapse" id="collapseExample">
@@ -287,13 +311,10 @@
           </div>
         </div>
       </div>
-   
-
-     
     </div>
-    </div>
+  </div>
    
-
+      <br>
     
     <footer class="footer">
       <h4>Redes sociales de Burton </h4>
@@ -303,16 +324,20 @@
         <div>
           <iframe width="560" height="315" src="https://www.youtube.com/embed/lecTfNnsqww?si=f0PhKYjpcYwvoQ0E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
-           <ul>
+        <div class="redes">
+          <ul>
             <li><a href="https://www.facebook.com/TimBurton/" class="facebook">
               <i class="fa-brands fa-facebook"></i> </a>Facebook</li>
               <li><a href="https://instagram.com/timburton/?hl=es " class="ig"><i class="fa-brands fa-instagram"></i></a>Instagram</li>
            <li> <a href="https://www.timburton.com/?fbclid=IwZXh0bgNhZW0CMTAAAR1lTagejO7E6465xIgLQ-skVmbz3t5UzuTduy2inhFpRa5mIptRu7om3c4_aem_dmoS3l8x22JlO__MS_A9QA " class="fanpage"><i class="fa-solid fa-globe"></i> 
           </a> Tim Burton</li>
           </ul> 
+        </div>
+           
      </div> 
      <div class="creativecommons container">
-      <p xmlns:cc="http://creativecommons.org/ns#" >Esta obra está licenciada bajo <a href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"  <img style="altura: 22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""></a></p>
+      <p xmlns:cc="http://creativecommons.org/ns#" >
+        Esta obra está licenciada bajo <a href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"  <img style="altura: 22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""></a></p>
      </div>
 
     </footer>
