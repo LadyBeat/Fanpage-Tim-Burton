@@ -13,6 +13,8 @@ html body{
   font-optical-sizing: auto;
   font-weight: 400;
   background-color: black;
+  display: flex;
+  justify-content: center;
 }
 /* use el full-screen-element para que todos mis elemntos abarcaran toda la página, porque se desalinearon cuando le puse movimiento a la imagen del herder */
 .full-screen-element { 
@@ -80,6 +82,10 @@ nav{
    margin: 20px; 
    padding-left: 50px;
    }
+.sticky-top {
+  margin-top: -20px;
+  padding-top: 20px;
+}
 .row{
   width: 100%;
   box-sizing: border-box;
