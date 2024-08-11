@@ -148,7 +148,7 @@ a{
   text-decoration: none;
 }
 .footer-content{
-  margin: 1em;
+  margin: 10px;
   display: flex;
   flex-direction: row;
   align-content: flex-start;
@@ -192,9 +192,8 @@ a{
 .biografia img{
   float:left;
 }
+
+
 img{
-  width: 300px;
-}
-.redes{
-  margin-right: 50px;
+  width: 350px;
 }
