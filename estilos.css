@@ -71,7 +71,7 @@ header{
 }
 @keyframes entrada{
   from {
-    right: -30px;
+    right: -40px;
   }
   to {
     right: 2%;
@@ -144,7 +144,9 @@ h5{
   width: 100%;
   padding: 0px;
 }
-
+a{
+  text-decoration: none;
+}
 .footer-content{
   margin: 1em;
   display: flex;
